@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem "react_on_rails", "~> 6"
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'pry'
