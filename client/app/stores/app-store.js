@@ -4,8 +4,8 @@ import { EventEmitter } from 'events';
 
 var _catalog = [];
 
-//populate catalog
-for(let i = 1; i < 9; i++){
+//populate catalog of products
+for(let i = 1; i < 10; i++){
 	_catalog.push({
 		'id': 'Widget' + i,
 		'title': 'Widget #' + i,

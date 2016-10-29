@@ -16,7 +16,7 @@ const AppActions = {
 		});
 	},
 
-	increaseItem(tem){
+	increaseItem(item){
 		dispatch({
 			actionType: Constants.INCREASE_ITEM,
 			item: item
