@@ -9,10 +9,25 @@ function getCatalog(){
 	};
 }
 
+console.log(getCatalog());
+
 class Catalog extends React.Component {
 	constructor(){
 		super();
 		this.state = getCatalog();
+		this._onChange = this._onChange.bind(this);
+	}
+
+	componentWillMount() {
+		AppStore.addChangeListener(this._onChange);
+	}
+
+	componentWillUnmount() {
+		AppStore.removeChangeListener(this._onChange);	
+	}
+
+	_onChange(){
+		this.setState(getCatalog);
 	}
 
 	render(){
